@@ -10,7 +10,7 @@
     <h1>TP2 Colbert Gendreau</h1>
     <section>
         <h2>Colbert Gendreau</h2>
-        <table>
+        <table border="1px">
             <thead>
                 <tr>
                     <th>Cours</th>
@@ -35,6 +35,71 @@
                     <td>Marcos Vinicius Sanches</td>
                 </tr>
             </tbody>
+
+        </table>
+    </section>
+    <section>
+        <h2>Commandes de Terminal</h2>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Commandes</th>
+                    <th>Utilité</th>
+                    <th>Comment Utiliser dans le terminal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">cd</td>
+                    <td>Changer de répertoire (change directory)</td>
+                    <td>cd nom-du-repertoire-recherche</td>
+                </tr>
+                <tr>
+                    <td>Reculer dans le répertoire parent</td>
+                    <td>cd ..</td>
+                </tr>
+                <tr>
+                    <td>Remonter au répertoire racine</td>
+                    <td>cd</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">ls</td>
+                    <td>Afficher la liste des fichiers et répertoires présents dans le répertoire actuel</td>
+                    <td>ls</td>
+                </tr>
+                <tr>
+                    <td>Afficher la liste des fichiers et répertoires présents dans le répertoire actuel, cachés ou non</td>
+                    <td>ls -a</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">chmod</td>
+                    <td>Modifier les permissions de lecture(r), écriture(w) et éxécution(x) d'un répertoire ou fichier (change mode)</td>
+                    <td>chmod ugo+rwx nom-du-repertoire</td>
+                </tr>
+                <tr>
+                    <td>Donne les permissions de lire(r) et écrire(W) le répertoire "nom-du-répertoire a l'utilisateur(u)</td>
+                    <td>chmod u+rw nom-du-repertoire</td>
+                </tr>
+                <tr>
+                    <td>Enlève les permissions d'éxécuter(x) le répertoire "nom-du-répertoire au groupe(g) et aux autres(o)</td>
+                    <td>chmod go-x nom-du-repertoire</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">chown</td>
+                    <td>Change l'utilisateur propriétaire ou le groupe propriétaire d'un fichier</td>
+                    <td>chown nouveau-proprietaire le-fichier</td>
+                </tr>
+                <tr>
+                    <td>Change l'utilisateur propriétaire ou le groupe propriétaire d'un fichier et de tout ce qu'il y a à l'intérieur</td>
+                    <td>chown -R nouveau-proprietaire le-fichier</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td colspan="2">(https://doc.ubuntu-fr.org/tutoriel/console_commandes_de_base)</td>
+                </tr>
+            </tfoot>
 
         </table>
     </section>
